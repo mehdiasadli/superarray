@@ -37,5 +37,16 @@
     "rollup-plugin-dts": "^6.1.1",
     "standard-version": "^9.5.0",
     "typescript": "^5.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehdiasadli/superarray.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mehdiasadli/superarray/issues"
+  },
+  "homepage": "https://github.com/mehdiasadli/superarray#readme",
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
