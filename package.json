@@ -1,0 +1,41 @@
+{
+  "name": "@mehdiasadov/superarray",
+  "version": "1.0.0",
+  "description": "A better Array",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "release": "standard-version",
+    "publish-npm": "npm run build && npm publish --access public"
+  },
+  "keywords": [
+    "array"
+  ],
+  "author": "Mehdi Asadli <asadlimehdi25@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^22.5.1",
+    "rollup": "^4.21.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.5.4"
+  }
+}

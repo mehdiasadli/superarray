@@ -1,0 +1,40 @@
+# Source files
+src/
+
+# Configuration files
+tsconfig.json
+rollup.config.mjs
+.gitignore
+
+# Development and test files
+test/
+__tests__/
+*.spec.ts
+*.test.ts
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build process files
+.travis.yml
+.gitlab-ci.yml
+.github/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# README and LICENSE are typically included by default, so no need to ignore them
+
+# Include dist folder (where your built files are)
+# !dist/
